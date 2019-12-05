@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47f68816-d7e2-4f8d-a7e2-2d708fb62cfb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day04/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day05/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day05/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Go Application" />
         <option value="Go File" />
+        <option value="Go Application" />
       </list>
     </option>
   </component>
@@ -63,7 +63,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build AoC2019/day04">
+  <component name="RunManager" selected="Go Build.go build AoC2019/day05">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="AoC2019" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -101,12 +101,12 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build AoC2019/day05" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="AoC2019" />
-      <working_directory value="$PROJECT_DIR$/day02" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/day02/main.go" />
-      <package value="AoC2019-02" />
+      <working_directory value="$PROJECT_DIR$/day05" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/day05/main.go" />
+      <package value="AoC2019/day05" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -134,18 +134,18 @@
     </configuration>
     <list>
       <item itemvalue="Go Build.go build AoC2019/day01" />
-      <item itemvalue="Go Build.go build main.go" />
       <item itemvalue="Go Build.go build AoC2019/day03" />
-      <item itemvalue="Go Test.TestIsPasswordCandidate in AoC2019/day04" />
       <item itemvalue="Go Build.go build AoC2019/day04" />
+      <item itemvalue="Go Build.go build AoC2019/day05" />
+      <item itemvalue="Go Test.TestIsPasswordCandidate in AoC2019/day04" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build AoC2019/day05" />
         <item itemvalue="Go Build.go build AoC2019/day04" />
         <item itemvalue="Go Test.TestIsPasswordCandidate in AoC2019/day04" />
         <item itemvalue="Go Build.go build AoC2019/day03" />
         <item itemvalue="Go Build.go build AoC2019/day01" />
-        <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
   </component>
