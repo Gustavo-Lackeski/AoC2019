@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47f68816-d7e2-4f8d-a7e2-2d708fb62cfb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day05/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day05/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day06/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day06/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,6 +33,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go Application" />
+    <property name="GO_FMT" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
@@ -63,7 +64,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build AoC2019/day05">
+  <component name="RunManager" selected="Go Build.go build AoC2019/day06">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="AoC2019" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -71,15 +72,6 @@
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/" />
       <package value="AoC2019-02" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build AoC2019/day01" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="AoC2019" />
-      <working_directory value="$PROJECT_DIR$/day01" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/day01/main.go" />
-      <package value="AoC2019/day01" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -110,6 +102,15 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build AoC2019/day06" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="AoC2019" />
+      <working_directory value="$PROJECT_DIR$/day06" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/day06/main.go" />
+      <package value="AoC2019/day06" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestIsPasswordCandidate in AoC2019/day04" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="AoC2019" />
       <working_directory value="$PROJECT_DIR$/day04" />
@@ -133,19 +134,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build AoC2019/day01" />
       <item itemvalue="Go Build.go build AoC2019/day03" />
       <item itemvalue="Go Build.go build AoC2019/day04" />
       <item itemvalue="Go Build.go build AoC2019/day05" />
+      <item itemvalue="Go Build.go build AoC2019/day06" />
       <item itemvalue="Go Test.TestIsPasswordCandidate in AoC2019/day04" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build AoC2019/day06" />
         <item itemvalue="Go Build.go build AoC2019/day05" />
         <item itemvalue="Go Build.go build AoC2019/day04" />
         <item itemvalue="Go Test.TestIsPasswordCandidate in AoC2019/day04" />
         <item itemvalue="Go Build.go build AoC2019/day03" />
-        <item itemvalue="Go Build.go build AoC2019/day01" />
       </list>
     </recent_temporary>
   </component>
@@ -164,5 +165,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="this is a big pile of pasta dont look pls" />
+    <option name="LAST_COMMIT_MESSAGE" value="this is a big pile of pasta dont look pls" />
   </component>
 </project>
