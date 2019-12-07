@@ -27,17 +27,30 @@ func main() {
 		originalProgram = append(originalProgram, parsedValue)
 	}
 
-	program := make([]int, len(originalProgram))
-	copy(program,originalProgram)
 	maxOutput := 0
-	allPermutations := permutations([]int{4,3,2,1,0})
+	allPermutations := permutations([]int{5, 6, 7, 8, 9})
 	for _, phaseSettings := range allPermutations {
-		ampInput := 0
-		for _ , phase := range phaseSettings {
-			ampInput = processProgram(program, phase, ampInput)
-			copy(program,originalProgram)
+		//E-A, A-B, B-C, C-D, D-E
+		var chans = []chan int{
+			make(chan int, 1),
+			make(chan int, 1),
+			make(chan int, 1),
+			make(chan int, 1),
+			make(chan int, 1),
 		}
-		maxOutput = Max(maxOutput, ampInput)
+		chans[0] <- 0
+		finalOutputChan := make(chan int)
+		for index, phase := range phaseSettings {
+			go func(index int, phase int) {
+				inputChan := chans[index]
+				outputChan := chans[(index+1)%5]
+				program := make([]int, len(originalProgram))
+				copy(program, originalProgram)
+				processProgram(program, phase, inputChan, outputChan, finalOutputChan, index)
+
+			}(index, phase)
+		}
+		maxOutput = Max(maxOutput, <-finalOutputChan)
 	}
 
 	println(fmt.Sprintf("Final output: %d", maxOutput))
@@ -69,9 +82,11 @@ func parseInstruction(n int) (int, int, int, int) {
 	return opcode, firstMode, secondMode, thirdMode
 }
 
-func processProgram(program []int, phase, input int) int{
-	var output int
+func processProgram(program []int, phase int, input, output, processFinished chan int, ampNumber int) {
+	var finalOutput int
+	//println("started program")
 	for index := 0; program[index] != 99; {
+		//println("new loop")
 		opCode, firstMode, secondMode, thirdMode := parseInstruction(program[index])
 		var firstParam, secondParam, thirdParam int
 		if firstMode == 0 {
@@ -105,13 +120,15 @@ func processProgram(program []int, phase, input int) int{
 			if index == 0 {
 				program[firstParam] = phase
 			} else {
-				program[firstParam] = input
+				program[firstParam] = <-input
 			}
 			index += 2
 		} else if opCode == 4 {
-			println(fmt.Sprintf("Index of output %d", index))
-			println(program[firstParam])
-			output = program[firstParam]
+			println(fmt.Sprintf("%d Waiting to send output", ampNumber))
+			//println(program[firstParam])
+			finalOutput = program[firstParam]
+			output <- program[firstParam]
+			println(fmt.Sprintf("%d output sent", ampNumber))
 			index += 2
 		} else if opCode == 5 {
 			if program[firstParam] != 0 {
@@ -143,36 +160,38 @@ func processProgram(program []int, phase, input int) int{
 			panic(opCode)
 		}
 	}
-	return output
+	if ampNumber == 4 {
+		processFinished <- finalOutput
+	}
 }
 
-func Max(x,y int) int {
+func Max(x, y int) int {
 	if x > y {
 		return x
 	}
 	return y
 }
 
-func permutations(arr []int)[][]int{
+func permutations(arr []int) [][]int {
 	var helper func([]int, int)
 	res := [][]int{}
 
-	helper = func(arr []int, n int){
-		if n == 1{
+	helper = func(arr []int, n int) {
+		if n == 1 {
 			tmp := make([]int, len(arr))
 			copy(tmp, arr)
 			res = append(res, tmp)
 		} else {
-			for i := 0; i < n; i++{
-				helper(arr, n - 1)
-				if n % 2 == 1{
+			for i := 0; i < n; i++ {
+				helper(arr, n-1)
+				if n%2 == 1 {
 					tmp := arr[i]
-					arr[i] = arr[n - 1]
-					arr[n - 1] = tmp
+					arr[i] = arr[n-1]
+					arr[n-1] = tmp
 				} else {
 					tmp := arr[0]
-					arr[0] = arr[n - 1]
-					arr[n - 1] = tmp
+					arr[0] = arr[n-1]
+					arr[n-1] = tmp
 				}
 			}
 		}
