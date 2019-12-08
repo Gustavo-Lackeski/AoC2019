@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47f68816-d7e2-4f8d-a7e2-2d708fb62cfb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/day08/part1/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day08/part1/part1.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day08/part2/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day08/part2/part2.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day07/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/day07/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day07/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/day07/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,18 +45,22 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day08/part2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\gustavo.lackeski\go\src\AoC2019-02\day02" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Gustavo\go\src\AoC2019\day08\part2" />
+      <recent name="C:\Users\Gustavo\go\src\AoC2019\day08\part1" />
       <recent name="C:\Users\gustavo.lackeski\go\src\AoC2019\day03" />
       <recent name="C:\Users\gustavo.lackeski\go\src\AoC2019\day01" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gustavo\go\src\AoC2019\day08\part2" />
+      <recent name="C:\Users\Gustavo\go\src\AoC2019\day08\part1" />
+      <recent name="C:\Users\gustavo.lackeski\go\src\AoC2019-02\day02" />
     </key>
   </component>
   <component name="RunManager" selected="Go Build.go build AoC2019/day07">
@@ -180,21 +186,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575722197457" />
-    <state width="1876" height="157" key="GridCell.Tab.0.bottom" timestamp="1575722759151">
+    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1575812739799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="157" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575722759151" />
-    <state width="1876" height="157" key="GridCell.Tab.0.center" timestamp="1575722759151">
+    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1575812739799" />
+    <state width="1876" height="157" key="GridCell.Tab.0.bottom" timestamp="1575727606874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="157" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575722759151" />
-    <state width="1876" height="157" key="GridCell.Tab.0.left" timestamp="1575722759151">
+    <state width="1876" height="157" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575727606874" />
+    <state width="1876" height="157" key="GridCell.Tab.0.center" timestamp="1575727606874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="157" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575722759151" />
-    <state width="1876" height="157" key="GridCell.Tab.0.right" timestamp="1575722759151">
+    <state width="1876" height="157" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575727606874" />
+    <state width="1876" height="157" key="GridCell.Tab.0.left" timestamp="1575727606874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="157" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575722759151" />
+    <state width="1876" height="157" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575727606874" />
+    <state width="1876" height="157" key="GridCell.Tab.0.right" timestamp="1575727606874">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="157" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575727606874" />
   </component>
 </project>
