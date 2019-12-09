@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc191c83-dc2e-45bd-8bb1-97ee4f183965" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day07/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day07/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day08/part1/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day08/part1/part1.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day08/part2/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day08/part2/part2.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day09/IntCodeComputer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day09/IntCodeComputer.go" beforeDir="false" afterPath="$PROJECT_DIR$/day09/IntCodeComputer.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +64,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build AoC2019/day06">
+  <component name="RunManager" selected="Go Build.go build AoC2019/day09">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="AoC2019" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -77,15 +72,6 @@
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/" />
       <package value="AoC2019-02" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build AoC2019/day03" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="AoC2019" />
-      <working_directory value="$PROJECT_DIR$/day03" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/day03/main.go" />
-      <package value="AoC2019/day03" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -116,6 +102,15 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build AoC2019/day09" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="AoC2019" />
+      <working_directory value="$PROJECT_DIR$/day09" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/day09/IntCodeComputer.go" />
+      <package value="AoC2019/day09" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestIsPasswordCandidate in AoC2019/day04" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="AoC2019" />
       <working_directory value="$PROJECT_DIR$/day04" />
@@ -139,19 +134,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build AoC2019/day03" />
       <item itemvalue="Go Build.go build AoC2019/day04" />
       <item itemvalue="Go Build.go build AoC2019/day05" />
       <item itemvalue="Go Build.go build AoC2019/day06" />
+      <item itemvalue="Go Build.go build AoC2019/day09" />
       <item itemvalue="Go Test.TestIsPasswordCandidate in AoC2019/day04" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build AoC2019/day09" />
         <item itemvalue="Go Build.go build AoC2019/day06" />
         <item itemvalue="Go Build.go build AoC2019/day05" />
         <item itemvalue="Go Build.go build AoC2019/day04" />
         <item itemvalue="Go Test.TestIsPasswordCandidate in AoC2019/day04" />
-        <item itemvalue="Go Build.go build AoC2019/day03" />
       </list>
     </recent_temporary>
   </component>
@@ -174,6 +169,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="this is a big pile of pasta dont look pls" />
     <MESSAGE value="Did you ever hear the tragedy of Darth Plagueis The Wise? I thought not. It’s not a story the Jedi would tell you. It’s a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life… He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful… the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. Ironic. He could save others from death, but not himself." />
-    <option name="LAST_COMMIT_MESSAGE" value="Did you ever hear the tragedy of Darth Plagueis The Wise? I thought not. It’s not a story the Jedi would tell you. It’s a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life… He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful… the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. Ironic. He could save others from death, but not himself." />
+    <MESSAGE value="refactor start" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor start" />
   </component>
 </project>

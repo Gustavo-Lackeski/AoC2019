@@ -2,7 +2,6 @@ package main
 
 import (
 	"bufio"
-	"fmt"
 	"math/big"
 	"os"
 	"strconv"
@@ -25,20 +24,16 @@ func main() {
 	scanner.Scan()
 	rawInput := scanner.Text()
 	input := strings.Split(rawInput, ",")
-	originalProgram := make([]int, 0, len(input))
-	for _, value := range input {
-		parsedValue, err := strconv.Atoi(value)
-		if err != nil {
-			panic(err)
-		}
-		originalProgram = append(originalProgram, parsedValue)
-	}
 
-	processProgram(originalProgram)
+	computer := NewComputer(input)
+
+	computer.ProcessProgram()
+
+	println(computer.output[len(computer.output)-1].String())
 
 }
 
-func (ic *IntCodeComputer) NewComputer(rawProgram []string) *IntCodeComputer {
+func NewComputer(rawProgram []string) *IntCodeComputer {
 	computer := &IntCodeComputer{
 		program:     make([]*big.Int, 0, len(rawProgram)),
 		extraMemory: make(map[string]*big.Int),
@@ -56,68 +51,68 @@ func (ic *IntCodeComputer) NewComputer(rawProgram []string) *IntCodeComputer {
 
 func (ic *IntCodeComputer) ProcessProgram() {
 	index := big.NewInt(0)
-	for program[index] != 99 {
+	for ic.read(index).Cmp(big.NewInt(99)) != 0 {
 		opCode, firstMode, secondMode, thirdMode := parseInstruction(ic.read(index))
 		var firstParam, secondParam, thirdParam *big.Int
 		if firstMode == 0 {
 			firstParam = ic.read(new(big.Int).Add(index, big.NewInt(1)))
-		} else {
+		} else if firstMode == 1 {
 			firstParam = new(big.Int).Add(index, big.NewInt(1))
 		}
 
 		if secondMode == 0 {
 			secondParam = ic.read(new(big.Int).Add(index, big.NewInt(2)))
-		} else {
+		} else if secondMode == 1 {
 			secondParam = new(big.Int).Add(index, big.NewInt(2))
 		}
 
 		if thirdMode == 0 {
 			thirdParam = ic.read(new(big.Int).Add(index, big.NewInt(3)))
-		} else {
+		} else if thirdMode == 1 {
 			thirdParam = new(big.Int).Add(index, big.NewInt(3))
 		}
 
 		switch opCode {
 		case 1:
-			program[thirdParam] = program[firstParam] + program[secondParam]
-			index += 4
+			result := new(big.Int).Add(ic.read(firstParam), ic.read(secondParam))
+			ic.write(result, thirdParam)
+			index = index.Add(index, big.NewInt(4))
 		case 2:
-			program[thirdParam] = program[firstParam] * program[secondParam]
-			index += 4
+			result := new(big.Int).Mul(ic.read(firstParam), ic.read(secondParam))
+			ic.write(result, thirdParam)
+			index = index.Add(index, big.NewInt(4))
 		case 3:
-			program[firstParam] = 5
-			index += 2
+			ic.write(big.NewInt(5), firstParam) // TODO: CHANGE INPUT VALUE
+			index = index.Add(index, big.NewInt(2))
 		case 4:
-			//TODO CHANGE
-			println(fmt.Sprintf("Index of output %d", index))
-			println(program[firstParam])
-			index += 2
+			ic.output = append(ic.output, ic.read(firstParam))
+			index = index.Add(index, big.NewInt(2))
 		case 5:
-			if program[firstParam] != 0 {
-				index = program[secondParam]
+			if ic.read(firstParam).Cmp(big.NewInt(0)) != 0 {
+				index = ic.read(secondParam)
 			} else {
-				index += 3
+				index = index.Add(index, big.NewInt(3))
 			}
 		case 6:
-			if program[firstParam] == 0 {
-				index = program[secondParam]
+			if ic.read(firstParam).Cmp(big.NewInt(0)) == 0 {
+				index = ic.read(secondParam)
 			} else {
-				index += 3
+				index = index.Add(index, big.NewInt(3))
 			}
 		case 7:
-			if program[firstParam] < program[secondParam] {
-				program[thirdParam] = 1
+			if ic.read(firstParam).Cmp(ic.read(secondParam)) < 0 {
+				ic.write(big.NewInt(1), thirdParam)
 			} else {
-				program[thirdParam] = 0
+				ic.write(big.NewInt(0), thirdParam)
 			}
-			index += 4
+			index = index.Add(index, big.NewInt(4))
 		case 8:
-			if program[firstParam] == program[secondParam] {
-				program[thirdParam] = 1
+			if ic.read(firstParam).Cmp(ic.read(secondParam)) == 0 {
+				ic.write(big.NewInt(1), thirdParam)
 			} else {
-				program[thirdParam] = 0
+				ic.write(big.NewInt(0), thirdParam)
 			}
-			index += 4
+			index = index.Add(index, big.NewInt(4))
 		default:
 			panic(opCode)
 		}
