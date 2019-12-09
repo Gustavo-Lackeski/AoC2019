@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47f68816-d7e2-4f8d-a7e2-2d708fb62cfb" name="Default Changelist" comment="">
+    <list default="true" id="fc191c83-dc2e-45bd-8bb1-97ee4f183965" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/day07/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day08/part1/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day08/part1/part1.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day08/part2/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day08/part2/part2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/IntCodeComputer.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
