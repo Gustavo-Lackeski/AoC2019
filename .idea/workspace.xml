@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc191c83-dc2e-45bd-8bb1-97ee4f183965" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/day10/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day10/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day09/IntCodeComputer.go" beforeDir="false" afterPath="$PROJECT_DIR$/day09/IntCodeComputer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day09/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/day09/input.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +64,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build AoC2019/day09">
+  <component name="RunManager" selected="Go Build.go build AoC2019/day10">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="AoC2019" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -111,15 +111,13 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="TestIsPasswordCandidate in AoC2019/day04" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="go build AoC2019/day10" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="AoC2019" />
-      <working_directory value="$PROJECT_DIR$/day04" />
-      <framework value="gotest" />
+      <working_directory value="$PROJECT_DIR$/day10" />
       <kind value="PACKAGE" />
-      <package value="AoC2019/day04" />
+      <filePath value="$PROJECT_DIR$/day10/main.go" />
+      <package value="AoC2019/day10" />
       <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestIsPasswordCandidate$" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -138,15 +136,15 @@
       <item itemvalue="Go Build.go build AoC2019/day05" />
       <item itemvalue="Go Build.go build AoC2019/day06" />
       <item itemvalue="Go Build.go build AoC2019/day09" />
-      <item itemvalue="Go Test.TestIsPasswordCandidate in AoC2019/day04" />
+      <item itemvalue="Go Build.go build AoC2019/day10" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build AoC2019/day10" />
         <item itemvalue="Go Build.go build AoC2019/day09" />
         <item itemvalue="Go Build.go build AoC2019/day06" />
         <item itemvalue="Go Build.go build AoC2019/day05" />
         <item itemvalue="Go Build.go build AoC2019/day04" />
-        <item itemvalue="Go Test.TestIsPasswordCandidate in AoC2019/day04" />
       </list>
     </recent_temporary>
   </component>
